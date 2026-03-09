@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mon panier MN-Textiles — Passez votre commande et payez via Wave.">
+  <title>Mon Panier — MN-Textiles</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="imagesboutique/logo.png">
+</head>
+<body>
+
+<!-- WhatsApp flottant -->
+<a class="wa-float" href="https://wa.me/221784609242?text=Bonjour%20MN-Textiles%20!" target="_blank" title="Commander sur WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a class="nav-logo" href="index.html">
+    <img class="nav-logo-img" src="imagesboutique/logo.png" alt="MN-Textiles">
+    <div>
+      <span class="nav-logo-name">MN-Textiles</span>
+      <span class="nav-logo-sub">Boutique de tissus</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="boutique.html">Boutique</a></li>
+    <li><a href="panier.html" class="active">Panier</a></li>
+    <li><a href="index.html#footer">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="panier.html" class="cart-btn">
+      <i class="fas fa-shopping-bag"></i> Panier
+      <span class="cart-badge" id="cart-badge">0</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE PANIER -->
+<main class="cart-page">
+  <div class="cart-container">
+
+    <!-- Articles -->
+    <div class="cart-box">
+      <div class="cart-header">
+        <h2><i class="fas fa-shopping-bag" style="color:var(--or);margin-right:.4rem"></i>Mon Panier</h2>
+        <button class="cart-clear" id="cart-clear-btn"><i class="fas fa-trash"></i> Vider</button>
+      </div>
+      <div id="cart-items-container"></div>
+    </div>
+
+    <!-- Résumé + Paiement -->
+    <aside class="summary-box">
+      <h3><i class="fas fa-receipt" style="color:var(--or);margin-right:.5rem"></i>Résumé de commande</h3>
+      <div id="order-summary-content"></div>
+
+      <!-- Formulaire client -->
+      <div class="customer-form">
+        <h4><i class="fas fa-user"></i> Vos informations</h4>
+        <div class="form-group">
+          <label>Nom complet *</label>
+          <input type="text" id="client-nom" placeholder="Ex: Aminata Diallo">
+        </div>
+        <div class="form-group">
+          <label>Téléphone *</label>
+          <input type="tel" id="client-tel" placeholder="Ex: 77 XXX XX XX">
+        </div>
+        <div class="form-group">
+          <label>Adresse de livraison</label>
+          <input type="text" id="client-adresse" placeholder="Ex: Médina, Dakar">
+        </div>
+      </div>
+
+      <!-- Paiement Wave -->
+      <div class="payment-title"><i class="fas fa-credit-card"></i> Paiement</div>
+      <button class="wave-btn" id="wave-btn">
+        <svg width="22" height="14" viewBox="0 0 24 14" fill="none">
+          <path d="M1 7 C4 1,8 13,12 7 C16 1,20 13,23 7" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        Payer avec Wave
+      </button>
+      <div class="wave-info" id="wave-info"></div>
+      <button class="payment-done-btn" id="payment-done-btn">
+        <i class="fas fa-check-circle"></i> J'ai effectué le paiement Wave
+      </button>
+
+      <!-- Commander sur WhatsApp -->
+      <button class="whatsapp-btn" id="whatsapp-order-btn">
+        <i class="fab fa-whatsapp" style="font-size:1.15rem"></i>
+        Commander sur WhatsApp
+      </button>
+
+      <p style="text-align:center;font-size:.72rem;color:var(--gris);margin-top:.9rem;line-height:1.55;font-style:italic">
+        <i class="fas fa-lock" style="color:var(--or)"></i> Données sécurisées · Réponse sous 30 min<br>
+        <em>"Tissus uniques pour toutes vos créations"</em>
+      </p>
+    </aside>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div>
+      <img class="footer-logo-img" src="imagesboutique/logo.png" alt="MN-Textiles">
+      <span class="footer-logo-name">MN-Textiles</span>
+      <span class="footer-logo-sub">Boutique de tissus premium</span>
+      <p class="footer-desc">Tissus africains et modernes de qualité premium. Paiement Wave, livraison rapide à Dakar.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="social-link social-fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-link social-ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="_blank" class="social-link social-tiktok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/221784609242" target="_blank" class="social-link social-wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://youtube.com" target="_blank" class="social-link social-yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="boutique.html"><i class="fas fa-store"></i> Boutique</a></li>
+        <li><a href="panier.html"><i class="fas fa-shopping-bag"></i> Mon panier</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Aide</h4>
+      <ul class="footer-links">
+        <li><a href="#"><i class="fas fa-question-circle"></i> Comment payer ?</a></li>
+        <li><a href="#"><i class="fas fa-truck"></i> Livraison</a></li>
+        <li><a href="index.html#footer"><i class="fas fa-phone"></i> Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Marché Sandaga, Dakar</span></div>
+      <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+221 78 460 92 42</span></div>
+      <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Lun–Sam : 8h–20h</span></div>
+      <a href="https://wa.me/221784609242" target="_blank" class="footer-wa-btn">
+        <i class="fab fa-whatsapp"></i> Nous écrire
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 MN-Textiles. Tous droits réservés.</span>
+    <div class="footer-payment-badges">
+      <span class="payment-badge"><i class="fas fa-mobile-alt"></i> Wave</span>
+      <span class="payment-badge"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+    </div>
+    <span>Fait avec <i class="fas fa-heart" style="color:var(--or)"></i> au Sénégal</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
