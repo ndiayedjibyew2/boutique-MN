@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MN-Textiles Boutique — Voile Fleurette, Broderie, Wax, Coton Homme. Large choix de tissus de qualité premium.">
+  <title>Boutique — MN-Textiles</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="imagesboutique/logo.png">
+</head>
+<body>
+
+<!-- WhatsApp flottant -->
+<a class="wa-float" href="https://wa.me/221784609242?text=Bonjour%20MN-Textiles%20!" target="_blank" title="Commander sur WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a class="nav-logo" href="index.html">
+    <img class="nav-logo-img" src="imagesboutique/logo.png" alt="MN-Textiles">
+    <div>
+      <span class="nav-logo-name">MN-Textiles</span>
+      <span class="nav-logo-sub">Boutique de tissus</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="boutique.html" class="active">Boutique</a></li>
+    <li><a href="panier.html">Panier</a></li>
+    <li><a href="index.html#footer">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="panier.html" class="cart-btn">
+      <i class="fas fa-shopping-bag"></i> Panier
+      <span class="cart-badge" id="cart-badge">0</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- SHOP HERO -->
+<header class="shop-hero">
+  <h1><i class="fas fa-store"></i> Notre Collection</h1>
+  <p>Découvrez des tissus uniques pour toutes vos créations</p>
+</header>
+
+<!-- PRODUITS -->
+<section class="section" style="padding-top:2.5rem">
+  <div class="section-inner">
+
+    <!-- Contrôles recherche + filtres -->
+    <div class="shop-controls">
+      <div class="search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="search-input" placeholder="Rechercher un tissu…" autocomplete="off">
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-cat="Tous">Tous</button>
+        <button class="filter-btn" data-cat="Voile Fleurette">Voile Fleurette</button>
+        <button class="filter-btn" data-cat="Broderie">Broderie</button>
+        <button class="filter-btn" data-cat="Wax">Wax</button>
+        <button class="filter-btn" data-cat="Coton Homme">Coton Homme</button>
+      </div>
+    </div>
+
+    <!-- Grille produits -->
+    <div class="products-grid" id="products-container"></div>
+
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner" style="padding:2.5rem 2.5rem">
+  <div class="promo-banner-inner">
+    <div>
+      <h2>Tissu introuvable ? <span class="highlight">On l'a !</span></h2>
+      <p>Nous avons bien plus en stock — écrivez-nous sur WhatsApp</p>
+    </div>
+    <a href="https://wa.me/221784609242?text=Bonjour%20MN-Textiles%2C%20je%20cherche%20un%20tissu" target="_blank" class="btn-gold">
+      <i class="fab fa-whatsapp"></i> Nous contacter
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div>
+      <img class="footer-logo-img" src="imagesboutique/logo.png" alt="MN-Textiles">
+      <span class="footer-logo-name">MN-Textiles</span>
+      <span class="footer-logo-sub">Boutique de tissus premium</span>
+      <p class="footer-desc">Votre boutique spécialisée dans les plus beaux tissus africains et modernes.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="social-link social-fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-link social-ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="_blank" class="social-link social-tiktok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/221761291855" target="_blank" class="social-link social-wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://youtube.com" target="_blank" class="social-link social-yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="boutique.html"><i class="fas fa-store"></i> Boutique</a></li>
+        <li><a href="panier.html"><i class="fas fa-shopping-bag"></i> Mon panier</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Catégories</h4>
+      <ul class="footer-links">
+        <li><a href="#"><i class="fas fa-chevron-right"></i> Voile Fleurette</a></li>
+        <li><a href="#"><i class="fas fa-chevron-right"></i> Tissus Brodés</a></li>
+        <li><a href="#"><i class="fas fa-chevron-right"></i> Tissu Wax</a></li>
+        <li><a href="#"><i class="fas fa-chevron-right"></i> Coton Homme</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Marché Sandaga, Dakar</span></div>
+      <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+221 78 460 92 42</span></div>
+      <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Lun–Sam : 8h–20h</span></div>
+      <a href="https://wa.me/221784609242" target="_blank" class="footer-wa-btn">
+        <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 MN-Textiles. Tous droits réservés.</span>
+    <div class="footer-payment-badges">
+      <span class="payment-badge"><i class="fas fa-mobile-alt"></i> Wave</span>
+      <span class="payment-badge"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+    </div>
+    <span>Fait avec <i class="fas fa-heart" style="color:var(--or)"></i> au Sénégal</span>
+  </div>
+</footer>
+
+<!-- MODAL PRODUIT -->
+<div class="modal-overlay" id="product-modal" onclick="fermerModal(event)">
+  <div class="modal">
+    <button class="modal-close" id="modal-close-btn" onclick="fermerModal(event)"><i class="fas fa-times"></i></button>
+    <img class="modal-img"  id="modal-img"   src="" alt="">
+    <div class="modal-body">
+      <div class="modal-cat"   id="modal-cat"></div>
+      <div class="modal-name"  id="modal-name"></div>
+      <div class="modal-stars" id="modal-stars"></div>
+      <div class="modal-desc"  id="modal-desc"></div>
+      <div class="modal-price" id="modal-price"></div>
+      <div class="modal-tags"  id="modal-tags"></div>
+      <button class="modal-add" id="modal-add-btn"><i class="fas fa-shopping-bag"></i> Ajouter au panier</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+<script>
+  // Lire le paramètre ?cat= dans l'URL pour pré-filtrer
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('cat');
+    if (cat) {
+      const btn = document.querySelector(`.filter-btn[data-cat="${cat}"]`);
+      if (btn) btn.click();
+    }
+  });
+</script>
+</body>
+</html>

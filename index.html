@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MN-Textiles — Découvrez des tissus uniques pour toutes vos créations. Voile Fleurette, Broderie, Wax, Coton. Paiement Wave, commande WhatsApp.">
+  <title>MN-Textiles — Tissus uniques pour toutes vos créations</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="imagesboutique/logo.png">
+</head>
+<body>
+
+<!-- WhatsApp flottant -->
+<a class="wa-float" href="https://wa.me/221784609242?text=Bonjour%20MN-Textiles%20!" target="_blank" title="Commander sur WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a class="nav-logo" href="index.html">
+    <img class="nav-logo-img" src="imagesboutique/logo.png" alt="MN-Textiles">
+    <div>
+      <span class="nav-logo-name">MN-Textiles</span>
+      <span class="nav-logo-sub">Boutique de tissus</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="boutique.html">Boutique</a></li>
+    <li><a href="panier.html">Panier</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="panier.html" class="cart-btn">
+      <i class="fas fa-shopping-bag"></i> Panier
+      <span class="cart-badge" id="cart-badge">0</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="imagesboutique/wax-01.jpg" alt="Tissu MN-Textiles">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-star"></i> Nouvelle collection disponible</div>
+    <div class="hero-brand">
+      <img class="hero-brand-logo" src="imagesboutique/logo.png" alt="MN-Textiles">
+      <div class="hero-brand-name">MN-Textiles</div>
+    </div>
+    <p class="hero-slogan">"Découvrez des tissus uniques<br>pour toutes <em>vos créations</em>"</p>
+    <p class="hero-sub">Voile Fleurette, Broderie, Wax, Coton Homme — une sélection premium de tissus africains et modernes. Commande via WhatsApp, paiement Wave sécurisé.</p>
+    <div class="hero-actions">
+      <a href="boutique.html" class="btn-gold"><i class="fas fa-shopping-bag"></i> Voir la boutique</a>
+      <a href="#populaires" class="btn-outline"><i class="fas fa-fire"></i> Nos bestsellers</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <i class="fas fa-chevron-down"></i>
+    <span>Découvrir</span>
+  </div>
+</section>
+
+<!-- FEATURES STRIP -->
+<div class="features-strip">
+  <div class="features-strip-inner">
+    <div class="feature-item">
+      <i class="fas fa-truck"></i>
+      <div class="feature-text"><strong>Livraison rapide</strong><span>Dakar & banlieue</span></div>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-mobile-alt"></i>
+      <div class="feature-text"><strong>Paiement Wave</strong><span>Simple & sécurisé</span></div>
+    </div>
+    <div class="feature-item">
+      <i class="fab fa-whatsapp"></i>
+      <div class="feature-text"><strong>Commande WhatsApp</strong><span>Réponse en 30 min</span></div>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-award"></i>
+      <div class="feature-text"><strong>Qualité premium</strong><span>Sélection rigoureuse</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- CATÉGORIES PHARES -->
+<section class="section categories-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">✦ Catégories phares</span>
+      <h2 class="section-title">Choisissez votre style</h2>
+      <p class="section-subtitle">Accédez rapidement à la catégorie de tissus qui correspond à votre prochaine création</p>
+    </div>
+    <div class="category-grid">
+      <a href="boutique.html?cat=Voile Fleurette" class="category-card">
+        <div class="category-img" style="background-image:url('imagesboutique/voile-03.jpg')"></div>
+        <div class="category-body">
+          <h3>Voile Fleurette</h3>
+          <p>Léger, fluide et féminin pour robes et tenues estivales.</p>
+          <span class="category-link">Voir la sélection <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="boutique.html?cat=Broderie" class="category-card">
+        <div class="category-img" style="background-image:url('imagesboutique/broder-02.jpg')"></div>
+        <div class="category-body">
+          <h3>Tissus Brodés</h3>
+          <p>Broderies fines et luxueuses pour vos grandes occasions.</p>
+          <span class="category-link">Voir la sélection <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="boutique.html?cat=Wax" class="category-card">
+        <div class="category-img" style="background-image:url('imagesboutique/wax-02.jpg')"></div>
+        <div class="category-body">
+          <h3>Wax Africain</h3>
+          <p>Motifs authentiques et colorés, 100% coton premium.</p>
+          <span class="category-link">Voir la sélection <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+      <a href="boutique.html?cat=Coton Homme" class="category-card">
+        <div class="category-img" style="background-image:url('imagesboutique/coton-02.jpg')"></div>
+        <div class="category-body">
+          <h3>Coton Homme</h3>
+          <p>Tissus élégants et résistants pour boubous et djellabas.</p>
+          <span class="category-link">Voir la sélection <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUITS POPULAIRES -->
+<section class="section" id="populaires">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">✦ Bestsellers</span>
+      <h2 class="section-title">Nos produits populaires</h2>
+      <p class="section-subtitle">Découvrez les tissus les plus appréciés par nos clientes fidèles</p>
+    </div>
+    <div class="products-grid" id="featured-products"></div>
+    <div style="text-align:center;margin-top:2.8rem">
+      <a href="boutique.html" class="btn-gold">Voir toute la collection <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE PHOTOS RÉELLES -->
+<section class="section gallery-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">✦ Notre galerie</span>
+      <h2 class="section-title">Nos tissus en images</h2>
+      <p class="section-subtitle">Photos authentiques de nos collections — ce que vous voyez est ce que vous recevez</p>
+    </div>
+    <div class="gallery-slider">
+      <div class="gallery-track" id="gallery-track">
+        <div class="gallery-slide"><img src="imagesboutique/voile-01.jpg" alt="Voile Fleurette"></div>
+        <div class="gallery-slide"><img src="imagesboutique/voile-02.jpg" alt="Voile Fleurette"></div>
+        <div class="gallery-slide"><img src="imagesboutique/voile-03.jpg" alt="Voile Fleurette"></div>
+        <div class="gallery-slide"><img src="imagesboutique/voile-04.jpg" alt="Voile Fleurette"></div>
+        <div class="gallery-slide"><img src="imagesboutique/voile-05.jpg" alt="Voile Fleurette"></div>
+        <div class="gallery-slide"><img src="imagesboutique/voile-06.jpg" alt="Voile Fleurette"></div>
+        <div class="gallery-slide"><img src="imagesboutique/voile-07.jpg" alt="Voile Fleurette"></div>
+        <div class="gallery-slide"><img src="imagesboutique/voile-08.jpg" alt="Voile Fleurette"></div>
+        <div class="gallery-slide"><img src="imagesboutique/voile-09.jpg" alt="Voile Fleurette"></div>
+        <div class="gallery-slide"><img src="imagesboutique/broder-01.jpg" alt="Tissu Brodé"></div>
+        <div class="gallery-slide"><img src="imagesboutique/broder-02.jpg" alt="Tissu Brodé"></div>
+        <div class="gallery-slide"><img src="imagesboutique/broder-03.jpg" alt="Tissu Brodé"></div>
+        <div class="gallery-slide"><img src="imagesboutique/broder-04.jpg" alt="Tissu Brodé"></div>
+        <div class="gallery-slide"><img src="imagesboutique/wax-01.jpg" alt="Tissu Wax"></div>
+        <div class="gallery-slide"><img src="imagesboutique/wax-02.jpg" alt="Tissu Wax"></div>
+        <div class="gallery-slide"><img src="imagesboutique/wax-03.jpg" alt="Tissu Wax"></div>
+        <div class="gallery-slide"><img src="imagesboutique/wax-04.jpg" alt="Tissu Wax"></div>
+        <div class="gallery-slide"><img src="imagesboutique/coton-01.jpg" alt="Coton Homme"></div>
+        <div class="gallery-slide"><img src="imagesboutique/coton-02.jpg" alt="Coton Homme"></div>
+        <div class="gallery-slide"><img src="imagesboutique/coton-03.jpg" alt="Coton Homme"></div>
+      </div>
+    </div>
+    <div class="gallery-nav">
+      <button class="gallery-nav-btn" onclick="galleryPrev()"><i class="fas fa-chevron-left"></i></button>
+      <div class="gallery-dots" id="gallery-dots"></div>
+      <button class="gallery-nav-btn" onclick="galleryNext()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+  <div class="promo-banner-inner">
+    <div>
+      <h2>Soldes jusqu'à <span class="highlight">30% de réduction</span></h2>
+      <p>Sur une sélection de tissus premium — Offre limitée !</p>
+    </div>
+    <a href="boutique.html" class="btn-gold"><i class="fas fa-fire"></i> Profiter des offres</a>
+  </div>
+</div>
+
+<!-- TÉMOIGNAGES -->
+<section class="section testimonials-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-tag">✦ Avis clientes</span>
+      <h2 class="section-title">Ce que disent nos clientes</h2>
+      <p class="section-subtitle">Plus de 500 clientes satisfaites nous font confiance</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Les tissus MN-Textiles sont d'une qualité exceptionnelle ! Mon voile fleurette est magnifique et les couleurs sont exactement comme sur les photos.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div><span class="testimonial-name">Aminata Diallo</span><span class="testimonial-city">Dakar, Sénégal</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Le paiement Wave est super pratique. J'ai commandé via WhatsApp et reçu le lendemain. Le tissu brodé est absolument splendide !</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">F</div>
+          <div><span class="testimonial-name">Fatou Ndiaye</span><span class="testimonial-city">Thiès, Sénégal</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">J'ai commandé du wax pour le mariage de ma fille. Tout le monde demandait où j'avais trouvé un tissu aussi beau. Merci MN-Textiles !</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div><span class="testimonial-name">Mariama Coulibaly</span><span class="testimonial-city">Ziguinchor, Sénégal</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div>
+      <img class="footer-logo-img" src="imagesboutique/logo.png" alt="MN-Textiles">
+      <span class="footer-logo-name">MN-Textiles</span>
+      <span class="footer-logo-sub">Boutique de tissus premium</span>
+      <p class="footer-desc">Votre boutique spécialisée dans les plus beaux tissus africains et modernes. Qualité premium, prix accessibles, livraison rapide à Dakar et en banlieue.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="social-link social-fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-link social-ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="_blank" class="social-link social-tiktok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/221784609242" target="_blank" class="social-link social-wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://youtube.com" target="_blank" class="social-link social-yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="boutique.html"><i class="fas fa-store"></i> Boutique</a></li>
+        <li><a href="panier.html"><i class="fas fa-shopping-bag"></i> Mon panier</a></li>
+        <li><a href="#footer"><i class="fas fa-phone"></i> Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Catégories</h4>
+      <ul class="footer-links">
+        <li><a href="boutique.html?cat=Voile Fleurette"><i class="fas fa-chevron-right"></i> Voile Fleurette</a></li>
+        <li><a href="boutique.html?cat=Broderie"><i class="fas fa-chevron-right"></i> Tissus Brodés</a></li>
+        <li><a href="boutique.html?cat=Wax"><i class="fas fa-chevron-right"></i> Tissu Wax</a></li>
+        <li><a href="boutique.html?cat=Coton Homme"><i class="fas fa-chevron-right"></i> Coton Homme</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact & Infos</h4>
+      <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Marché Sandaga, Dakar, Sénégal</span></div>
+      <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+221 78 460 92 42</span></div>
+      <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Lun–Sam : 8h–20h</span></div>
+      <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>Commandes & Renseignements</span></div>
+      <a href="https://wa.me/221784609242?text=Bonjour%20MN-Textiles%20!" target="_blank" class="footer-wa-btn">
+        <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 MN-Textiles. Tous droits réservés.</span>
+    <div class="footer-payment-badges">
+      <span class="payment-badge"><i class="fas fa-mobile-alt"></i> Wave</span>
+      <span class="payment-badge"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+    </div>
+    <span>Fait avec <i class="fas fa-heart" style="color:var(--or)"></i> au Sénégal</span>
+  </div>
+</footer>
+
+<!-- MODAL PRODUIT -->
+<div class="modal-overlay" id="product-modal" onclick="fermerModal(event)">
+  <div class="modal">
+    <button class="modal-close" id="modal-close-btn" onclick="fermerModal(event)"><i class="fas fa-times"></i></button>
+    <img class="modal-img" id="modal-img" src="" alt="">
+    <div class="modal-body">
+      <div class="modal-cat"  id="modal-cat"></div>
+      <div class="modal-name" id="modal-name"></div>
+      <div class="modal-stars" id="modal-stars"></div>
+      <div class="modal-desc" id="modal-desc"></div>
+      <div class="modal-price" id="modal-price"></div>
+      <div class="modal-tags" id="modal-tags"></div>
+      <button class="modal-add" id="modal-add-btn"><i class="fas fa-shopping-bag"></i> Ajouter au panier</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
